@@ -7,6 +7,8 @@ fn example_function() {
     println!("I am a function.")
 }
 
+
+
 /*
     Functions: Parameters
 */
@@ -14,6 +16,33 @@ fn example_function() {
 // You must always define the type of the parameter
 fn function_value(x: i32) {
     println!("The value of x is: {x}");
+}
+
+
+
+/*
+    Functions: Expressions
+*/
+fn function_expression() {
+    
+    // expression
+    let y = {
+        let x = 3;
+        x + 1               // expressions do not include ending semicolons as this would turn it into a statement.
+    };
+
+    println!("The value of y is: {y}");
+}
+
+
+
+/*
+    Functions: Return values
+*/
+
+// This function adds 1 to a given value
+fn function_return(x: i32) -> i32 {
+    x + 1
 }
 
 // the main funciton is the entry point for programs in rust
@@ -24,4 +53,8 @@ fn main() {
     // here we call the example function we defined above
     example_function();
     function_value(78);
+    function_expression();
+
+    let x = function_return(7);
+    println!("The value of x is {x}");
 }
