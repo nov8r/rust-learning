@@ -41,8 +41,8 @@ fn function_expression() {
 */
 
 // This function adds 1 to a given value
-fn function_return(x: i32) -> i32 {
-    x + 1
+fn function_return(z: i32) -> i32 {
+    z + 1
 }
 
 // the main funciton is the entry point for programs in rust
@@ -55,6 +55,6 @@ fn main() {
     function_value(78);
     function_expression();
 
-    let x = function_return(7);
-    println!("The value of x is {x}");
+    let z = function_return(23);
+    println!("The value of z is {z}");
 }
