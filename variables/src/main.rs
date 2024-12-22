@@ -10,22 +10,6 @@ fn get_type_of<T>(_: &T) -> &'static str {
 
 
 /*
-    Variables
-*/
-
-const FIVE: u32 = 5;
-
-fn vars() {
-    let mut x = 5;
-    println!("The value of x is: {x}");
-    x = 6;
-    println!("The value of x is now: {x}");
-    println!("The constant 'FIVE' is equal to {}.", FIVE)
-}
-
-
-
-/*
     Datatypes: Integers/Floating point, Bool, Char
 */
 
@@ -126,7 +110,6 @@ fn ctypes_array() {
 */
 
 fn main() {
-    vars();
     dtypes_num();
     dtypes_bool();
     dtypes_char();
