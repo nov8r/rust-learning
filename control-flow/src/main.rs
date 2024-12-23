@@ -34,6 +34,7 @@ fn ifelse_func(num: i32) {
     }
 }
 
+// This function shows how you can use an if statement in a variable
 fn iflet_func() {
     // because if is an expression, we can use it on the right side of a let statement
     let condition = true;
@@ -50,6 +51,7 @@ fn iflet_func() {
     Control-Flow: Loops
 */
 
+// This function demonstrates how loop works
 fn loop_func() {
     /*
         loop {
@@ -72,6 +74,7 @@ fn loop_func() {
     println!("The result is {result}");
 }
 
+// This function demonstrates how you can label loops
 fn looplabel_func() {
     let mut count = 0;
     'counting_up: loop {            //'counting_up is the label of the loop
@@ -94,6 +97,13 @@ fn looplabel_func() {
     println!("End count = {count}");
 }
 
+
+
+/*
+    Control Flow: While loops
+*/
+
+// This function demonstrates a basic while loop
 fn while_func() {
     let mut number = 3;
 
@@ -106,6 +116,13 @@ fn while_func() {
     println!("KabooM!");
 }
 
+
+
+/*
+    Control Flow: For loops
+*/
+
+// This function demonstrates a for loop iterating over an array of items
 fn for_func() {
     let a: [i32; 5] = [10, 20, 30, 40, 50];
 
@@ -116,6 +133,7 @@ fn for_func() {
     }
 }
 
+// This function demonstrates a for loop iterating over a range
 fn for_range_func() {
     for number in (1..4).rev() {    // .rev() reverses it so that it counts down from 3
         println!("{number}");
