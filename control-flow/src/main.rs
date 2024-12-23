@@ -106,6 +106,23 @@ fn while_func() {
     println!("KabooM!");
 }
 
+fn for_func() {
+    let a: [i32; 5] = [10, 20, 30, 40, 50];
+
+    // for loop iterates through every element in array a
+    // for every element in a, it prints out the value is with the value of the element.
+    for element in a {
+        println!("The value is {element}");
+    }
+}
+
+fn for_range_func() {
+    for number in (1..4).rev() {    // .rev() reverses it so that it counts down from 3
+        println!("{number}");
+    }
+    println!("bazinga!");
+}
+
 fn main() {
     if_func();
     ifelse_func(7);
@@ -113,4 +130,6 @@ fn main() {
     loop_func();
     looplabel_func();
     while_func();
+    for_func();
+    for_range_func();
 }
